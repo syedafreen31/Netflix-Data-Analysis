@@ -6,8 +6,11 @@ This project walks through the entire pipeline we followed to turn the public Ne
 #	Steps
 
 1	Download	Pulled netflix_titles.csv from Kaggle.
+
 2	Import	Loaded the CSV into Python using pandas.
+
 3	Connect to SQL Server	Opened a SQLAlchemy/pyodbc connection to our SQL Server instance.
+
 4	Initial sanity check	Pushed the raw file into a staging table and ran row‑counts / schema checks in SSMS.
 
 Data cleaning	  * removed duplicates
