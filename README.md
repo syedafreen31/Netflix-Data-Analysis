@@ -13,14 +13,14 @@ This project walks through the entire pipeline we followed to turn the public Ne
 
 4	Initial sanity check	Pushed the raw file into a staging table and ran row‑counts / schema checks in SSMS.
 
-Data cleaning	  * removed duplicates
+Data cleaning	  
 
  * fixed data types (date_added ➜ DATE, duration ➜ INT minutes,varchar data size)
  
  * check if there are any duplicates in show id,title
- * 
+  
  * checked for the null values in the duration column and misleading data
- * 
+
  * appended fresh rows if the CSV is updated later.
  
 5.Normalisation	Split multi‑value columns into four helper tables, each keyed by show_id: netflix_director, netflix_genre, netflix_country, netflix_cast.
